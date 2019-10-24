@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      HotelRoomApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding center text-center>
+  <ion-list>
+    <ion-item>
+      <ion-input [(ngModel)]="userNick" placeholder="Username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="password" placeholder="Password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-button color="primary" (click)="goToRooms()">LOGIN</ion-button>
+  <br>
+  <br>
+  <br>
+  <p></p>
+
+</ion-content>

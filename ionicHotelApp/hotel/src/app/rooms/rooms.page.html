@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>rooms</ion-title>
+    <ion-button (click)="goToHome()">HOME</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding center text-center>
+    <ion-item>
+        <ion-input id="idRoom" placeholder="Room's ID"></ion-input>
+      </ion-item>
+  <ion-button (click)="getOneRoom()">SEARCH ROOM</ion-button>
+  <ion-button (click)="goToPostRoom()">POST A ROOM</ion-button>
+  <ion-button (click)="deleteRoom()">DELETE ROOM</ion-button>
+  <ion-button (click)="goToUpdateRoom()">UPDATE ROOM</ion-button>
+  <br>
+  <br>
+  <ion-list *ngFor ="let room of roomArray">
+    <ion-label>{{room.idRoom}}</ion-label>
+    <br>
+    <ion-label>{{room.numberRoom}}</ion-label>
+    <br>
+    <ion-label>{{room.price}}</ion-label>
+    <br>
+    <ion-label>{{room.state}}</ion-label>
+  </ion-list>
+</ion-content>

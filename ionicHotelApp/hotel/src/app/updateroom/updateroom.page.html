@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>updateroom</ion-title>
+    <ion-button (click)="goToRoomsFromUpdateRoom()">ROOMS</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding center text-center>
+    <ion-list>
+        <ion-item>
+            <ion-input id="putIdRoom" placeholder="Room id"></ion-input>
+          </ion-item>
+        <ion-item>
+          <ion-input id="putNumberRoom" placeholder="Room number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input id="putPriceRoom" placeholder="Room's price"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input id="putStateRoom" placeholder="Availability"></ion-input>
+        </ion-item>
+      </ion-list>
+      <br>
+      <br>
+      <ion-button (click)="putOneRoom()">UPDATE ROOM FROM HOTEL</ion-button>
+
+</ion-content>
