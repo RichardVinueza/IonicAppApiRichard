@@ -7,7 +7,7 @@
 
 <ion-content padding center text-center>
     <ion-item>
-        <ion-input id="idRoom" placeholder="Room's ID"></ion-input>
+        <ion-input [(ngModel)]="idRoom" placeholder="Room's ID"></ion-input>
       </ion-item>
   <ion-button (click)="getOneRoom()">SEARCH ROOM</ion-button>
   <ion-button (click)="goToPostRoom()">POST A ROOM</ion-button>

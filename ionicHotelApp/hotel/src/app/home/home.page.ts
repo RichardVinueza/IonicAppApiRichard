@@ -14,11 +14,12 @@ export class HomePage {
   constructor(private router: Router) { }
 
   ngOnInit() {
+    this.router.navigate(['/rooms']);
   }
  
   goToRooms(){
-
-    if(this.userNick == "Richard" && this.password == "admin1234" ){
+    
+    if(this.userNick == "" && this.password == "" ){
       this.router.navigate(['/rooms']);
     }
     
